@@ -13192,14 +13192,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="k">def</span> <span class="nf">refresh</span><span class="p">(</span><span class="n">b</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">refresh</span><span class="p">(</span><span class="n">b</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="n">master</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="n">managers</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="n">positions</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">master</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="s2">&quot;$ Left&quot;</span> <span class="ow">or</span> <span class="n">index</span> <span class="o">==</span> <span class="s2">&quot;Max Bid&quot;</span><span class="p">:</span>
@@ -13239,14 +13238,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="k">def</span> <span class="nf">player_sold</span><span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">player_sold</span><span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">master</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">pos</span><span class="p">,</span><span class="n">manager</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
         <span class="n">master</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">pos</span><span class="p">,</span> <span class="n">manager</span><span class="p">]</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span><span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
         <span class="n">curr</span> <span class="o">=</span> <span class="n">master</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="s2">&quot;$ Left&quot;</span><span class="p">,</span> <span class="n">manager</span><span class="p">]</span> 
@@ -13266,15 +13264,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-
-<span class="k">def</span> <span class="nf">view_master</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">view_master</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
     <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">master</span><span class="o">.</span><span class="n">to_html</span><span class="p">()))</span>
     
 <span class="k">def</span> <span class="nf">view_manager</span><span class="p">(</span><span class="n">manager</span><span class="p">):</span>
@@ -13295,14 +13291,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="n">pos</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pos</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">()</span>
 <span class="n">name</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">()</span>
 <span class="n">value</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">()</span>
 <span class="n">playerName</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">()</span>
@@ -13432,14 +13427,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="n">btn</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;View Board&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">btn</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;View Board&quot;</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">btn</span><span class="p">)</span>
 <span class="n">btn</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">view_master</span><span class="p">)</span>
 </pre></div>
@@ -13651,15 +13645,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-
-<span class="n">managerView</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Manager to View: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">managerView</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Manager to View: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
 <span class="n">view_manager</span><span class="p">(</span><span class="n">managerView</span><span class="p">)</span>
 </pre></div>
 
@@ -13758,14 +13750,13 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="n">btn2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Refresh Board&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">btn2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Refresh Board&quot;</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">btn2</span><span class="p">)</span>
 <span class="n">btn2</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">refresh</span><span class="p">)</span>
 <span class="n">master</span> <span class="o">=</span> <span class="n">refresh</span><span class="p">()</span>
@@ -13793,59 +13784,6 @@ div#notebook {
 
 </div>
 
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pwd</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;/Users/KelvinM/Fantasy Football&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
